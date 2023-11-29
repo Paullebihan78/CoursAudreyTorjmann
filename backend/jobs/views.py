@@ -23,6 +23,7 @@ class OfferViewSet(generics.ListAPIView):
 
     filterset_fields = {
         "title": ["exact", "icontains", "startswith"],
+        "srcImgCompany": ["exact", "icontains", "startswith"],
         "location": ["exact", "icontains", "startswith"],
         "sector": ["exact", "icontains", "startswith"],
         "type": ["exact", "icontains", "startswith"],
